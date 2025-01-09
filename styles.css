@@ -1,0 +1,89 @@
+/* Global reset: Ensures consistency across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Background color for the body, with white text for contrast */
+body {
+    background: #002339;
+    color: #fff;
+}
+
+/* Main container: Centers content and sets max-width */
+.Container {
+    margin: 7%;
+    width: 90%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header styling: Adds space between title and subtitle, and custom font size */
+.Container h1 {
+    font-weight: 500;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+/* Green accent for the span inside the header */
+.Container h1 span {
+    color: #019f55;
+    border-bottom: 4px solid #019f55;
+}
+
+/* Flexbox for aligning the input, button, and icon */
+.display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+/* Input field: Adds padding, adjusts width, and gives a clean border */
+input {
+    padding: 10px;
+    width: 70%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button styling: Adds padding, background color, and hover effect */
+button {
+    padding: 10px 15px;
+    background-color: #019f55;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+/* Hover effect for the button */
+button:hover {
+    background-color: #017d42;
+}
+
+/* Image (copy icon) styling with hover and active effects */
+img {
+    cursor: pointer;
+    margin-left: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover effect: increases brightness and scales the icon */
+img:hover {
+    filter: brightness(1.3);
+    transform: scale(1.1);
+}
+
+/* Active effect: brighter and larger scale when clicked */
+img:active {
+    filter: brightness(1.5);
+    transform: scale(1.2);
+}
